@@ -4,24 +4,23 @@ import Foundation
 
 class UserServices {
     
-    func loginUser(parameters: [String: Any], completion: @escaping (LoginResponse?, Error?) -> ()) {
-        // Request object
-        let request = LoginRequest()
-        // API Object
-        let apiTaskLoader = APITaskLoader(apiRequest: request)
-        // Data request
+    func loginUser(parameters: [String: Any], completion: @escaping (LoginModel?, Error?) -> ()) {
+        // api
+        let api = LoginAPI()
+        // api loader
+        let apiTaskLoader = APILoader(apiRequest: api)
+        
         apiTaskLoader.loadAPIRequest(requestData: parameters) { (result, error) in
             completion(result, error)
         }
     }
     
-    func getUserDetail(parameters: [String: Any], completion: @escaping (UserDetailResponse?, Error?) -> ()) {
+    func getUserDetail(parameters: [String: Any], completion: @escaping (UserDetailModel?, Error?) -> ()) {
+        // api
+        let api = UserDetailAPI()
+        // api loader
+        let apiRequestLoader = APILoader(apiRequest: api)
         
-        // Request object
-        let request = UserDetailRequest()
-        // API Object
-        let apiRequestLoader = APITaskLoader(apiRequest: request)
-        // Data request
         apiRequestLoader.loadAPIRequest(requestData: parameters) { (result, error) in
             completion(result, error)
         }

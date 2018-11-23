@@ -26,7 +26,7 @@ class UserBusiness {
     }
     
     func userDetail(parameters: [String: Any],
-               completion:@escaping ((_ userDetail: UserDetailResponse?, _ error: Error?) -> ()) ) {
+               completion:@escaping ((_ userDetail: UserDetailModel?, _ error: Error?) -> ()) ) {
         
         userServices.getUserDetail(parameters: parameters) { (response, error) in
             completion(response, error)

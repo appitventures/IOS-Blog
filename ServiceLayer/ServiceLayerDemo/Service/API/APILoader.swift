@@ -4,7 +4,7 @@ import Foundation
 
 
 
-class APITaskLoader<T: APITaskHandler> {
+class APILoader<T: APIHandler> {
     
     let apiRequest: T
     

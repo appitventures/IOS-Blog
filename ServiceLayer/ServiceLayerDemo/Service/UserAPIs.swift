@@ -4,7 +4,7 @@ import Foundation
 
 
 
-struct LoginRequest: APITaskHandler {
+struct LoginAPI: APIHandler {
     
     func makeRequest(from parameters: [String: Any]) -> Request {
         // prepare url
@@ -20,12 +20,12 @@ struct LoginRequest: APITaskHandler {
         return request
     }
     
-    func parseResponse(data: Data) throws -> LoginResponse {
+    func parseResponse(data: Data) throws -> LoginModel {
         return try defaultParseResponse(data: data)
     }
 }
 
-struct UserDetailRequest: APITaskHandler {
+struct UserDetailAPI: APIHandler {
     
     func makeRequest(from parameters: [String: Any]) -> Request {
         // url components
@@ -45,7 +45,7 @@ struct UserDetailRequest: APITaskHandler {
         return request
     }
     
-    func parseResponse(data: Data) throws -> UserDetailResponse {
+    func parseResponse(data: Data) throws -> UserDetailModel {
         return try defaultParseResponse(data: data)
     }
 }

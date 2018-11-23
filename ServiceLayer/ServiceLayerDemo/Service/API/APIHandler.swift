@@ -8,7 +8,7 @@ struct NetworkError: Error {
 
 struct UnknownParseError: Error { }
 
-// MARK: - APITaskHandler
+// MARK: - APIHandler
 
 protocol RequestHandler {
     
@@ -24,7 +24,7 @@ protocol ResponseHandler {
     func parseResponse(data: Data) throws -> ResponseDataType
 }
 
-typealias APITaskHandler = RequestHandler & ResponseHandler
+typealias APIHandler = RequestHandler & ResponseHandler
 
 
 // MARK: - Request

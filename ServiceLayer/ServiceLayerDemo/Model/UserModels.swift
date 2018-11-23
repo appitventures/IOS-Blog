@@ -3,14 +3,14 @@
 import Foundation
 
 
-struct LoginResponse: Response {
+struct LoginModel: Response {
     
     var httpStatus: Int
     var message: String
     var authToken: String
 }
 
-struct UserDetailResponse: Response {
+struct UserDetailModel: Response {
     
     var httpStatus: Int
     var message: String

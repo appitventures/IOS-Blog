@@ -14,16 +14,16 @@
 		9FDE579A21955547001477D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FDE579821955547001477D2 /* LaunchScreen.storyboard */; };
 		9FDE57B021955548001477D2 /* ServiceLayerDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDE57AF21955548001477D2 /* ServiceLayerDemoUITests.swift */; };
 		9FDE57C1219555A4001477D2 /* ServiceConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDE57C0219555A4001477D2 /* ServiceConstants.swift */; };
-		9FDE57C321955711001477D2 /* APITaskLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDE57C221955711001477D2 /* APITaskLoader.swift */; };
+		9FDE57C321955711001477D2 /* APILoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDE57C221955711001477D2 /* APILoader.swift */; };
 		9FDE57C521955751001477D2 /* AppHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDE57C421955751001477D2 /* AppHelper.swift */; };
 		9FDE57CA21955804001477D2 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDE57C921955804001477D2 /* Reachability.swift */; };
-		9FDE57CE2195588B001477D2 /* UserResponseModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDE57CD2195588B001477D2 /* UserResponseModels.swift */; };
+		9FDE57CE2195588B001477D2 /* UserModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDE57CD2195588B001477D2 /* UserModels.swift */; };
 		9FDE57D121955949001477D2 /* SharedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDE57D021955949001477D2 /* SharedData.swift */; };
 		9FDE57DB219570D2001477D2 /* UserServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDE57DA219570D2001477D2 /* UserServices.swift */; };
-		9FDE57DE21957109001477D2 /* UserRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDE57DD21957109001477D2 /* UserRequests.swift */; };
+		9FDE57DE21957109001477D2 /* UserAPIs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDE57DD21957109001477D2 /* UserAPIs.swift */; };
 		9FDE57E321959B1B001477D2 /* UserBusiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDE57E221959B1B001477D2 /* UserBusiness.swift */; };
 		9FDE57E521959EEE001477D2 /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDE57E421959EEE001477D2 /* ServiceError.swift */; };
-		9FDE57E721959FCF001477D2 /* APITaskHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDE57E621959FCF001477D2 /* APITaskHandler.swift */; };
+		9FDE57E721959FCF001477D2 /* APIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDE57E621959FCF001477D2 /* APIHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,16 +57,16 @@
 		9FDE57AF21955548001477D2 /* ServiceLayerDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLayerDemoUITests.swift; sourceTree = "<group>"; };
 		9FDE57B121955548001477D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9FDE57C0219555A4001477D2 /* ServiceConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceConstants.swift; sourceTree = "<group>"; };
-		9FDE57C221955711001477D2 /* APITaskLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APITaskLoader.swift; sourceTree = "<group>"; };
+		9FDE57C221955711001477D2 /* APILoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APILoader.swift; sourceTree = "<group>"; };
 		9FDE57C421955751001477D2 /* AppHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppHelper.swift; sourceTree = "<group>"; };
 		9FDE57C921955804001477D2 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
-		9FDE57CD2195588B001477D2 /* UserResponseModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserResponseModels.swift; sourceTree = "<group>"; };
+		9FDE57CD2195588B001477D2 /* UserModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModels.swift; sourceTree = "<group>"; };
 		9FDE57D021955949001477D2 /* SharedData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedData.swift; sourceTree = "<group>"; };
 		9FDE57DA219570D2001477D2 /* UserServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserServices.swift; sourceTree = "<group>"; };
-		9FDE57DD21957109001477D2 /* UserRequests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRequests.swift; sourceTree = "<group>"; };
+		9FDE57DD21957109001477D2 /* UserAPIs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAPIs.swift; sourceTree = "<group>"; };
 		9FDE57E221959B1B001477D2 /* UserBusiness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserBusiness.swift; sourceTree = "<group>"; };
 		9FDE57E421959EEE001477D2 /* ServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceError.swift; sourceTree = "<group>"; };
-		9FDE57E621959FCF001477D2 /* APITaskHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APITaskHandler.swift; sourceTree = "<group>"; };
+		9FDE57E621959FCF001477D2 /* APIHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +94,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9F0C32F521A80AC200194EFF /* API */ = {
+			isa = PBXGroup;
+			children = (
+				9FDE57E621959FCF001477D2 /* APIHandler.swift */,
+				9FDE57C221955711001477D2 /* APILoader.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
 		9FDE578321955546001477D2 = {
 			isa = PBXGroup;
 			children = (
@@ -153,9 +162,8 @@
 			children = (
 				9FDE57C0219555A4001477D2 /* ServiceConstants.swift */,
 				9FDE57DA219570D2001477D2 /* UserServices.swift */,
-				9FDE57DD21957109001477D2 /* UserRequests.swift */,
-				9FDE57E621959FCF001477D2 /* APITaskHandler.swift */,
-				9FDE57C221955711001477D2 /* APITaskLoader.swift */,
+				9FDE57DD21957109001477D2 /* UserAPIs.swift */,
+				9F0C32F521A80AC200194EFF /* API */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -181,7 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				9FDE57E421959EEE001477D2 /* ServiceError.swift */,
-				9FDE57CD2195588B001477D2 /* UserResponseModels.swift */,
+				9FDE57CD2195588B001477D2 /* UserModels.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -345,16 +353,16 @@
 				9FDE57D121955949001477D2 /* SharedData.swift in Sources */,
 				9FDE57DB219570D2001477D2 /* UserServices.swift in Sources */,
 				9FDE57C521955751001477D2 /* AppHelper.swift in Sources */,
-				9FDE57DE21957109001477D2 /* UserRequests.swift in Sources */,
+				9FDE57DE21957109001477D2 /* UserAPIs.swift in Sources */,
 				9FDE57E321959B1B001477D2 /* UserBusiness.swift in Sources */,
 				9FDE57C1219555A4001477D2 /* ServiceConstants.swift in Sources */,
 				9FDE57CA21955804001477D2 /* Reachability.swift in Sources */,
 				9FDE579221955546001477D2 /* ViewController.swift in Sources */,
-				9FDE57E721959FCF001477D2 /* APITaskHandler.swift in Sources */,
-				9FDE57CE2195588B001477D2 /* UserResponseModels.swift in Sources */,
+				9FDE57E721959FCF001477D2 /* APIHandler.swift in Sources */,
+				9FDE57CE2195588B001477D2 /* UserModels.swift in Sources */,
 				9FDE579021955546001477D2 /* AppDelegate.swift in Sources */,
 				9FDE57E521959EEE001477D2 /* ServiceError.swift in Sources */,
-				9FDE57C321955711001477D2 /* APITaskLoader.swift in Sources */,
+				9FDE57C321955711001477D2 /* APILoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
