@@ -24,6 +24,7 @@
 		9FDE57E321959B1B001477D2 /* UserBusiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDE57E221959B1B001477D2 /* UserBusiness.swift */; };
 		9FDE57E521959EEE001477D2 /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDE57E421959EEE001477D2 /* ServiceError.swift */; };
 		9FDE57E721959FCF001477D2 /* APIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDE57E621959FCF001477D2 /* APIHandler.swift */; };
+		9FF9E0F921C13D1200653657 /* UserServicesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF9E0F821C13D1200653657 /* UserServicesTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		9FDE57E221959B1B001477D2 /* UserBusiness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserBusiness.swift; sourceTree = "<group>"; };
 		9FDE57E421959EEE001477D2 /* ServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceError.swift; sourceTree = "<group>"; };
 		9FDE57E621959FCF001477D2 /* APIHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHandler.swift; sourceTree = "<group>"; };
+		9FF9E0F821C13D1200653657 /* UserServicesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserServicesTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				9FDE57A621955548001477D2 /* Info.plist */,
+				9FF9E0F821C13D1200653657 /* UserServicesTests.swift */,
 			);
 			path = ServiceLayerDemoTests;
 			sourceTree = "<group>";
@@ -290,6 +293,7 @@
 					};
 					9FDE579F21955548001477D2 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 						TestTargetID = 9FDE578B21955546001477D2;
 					};
 					9FDE57AA21955548001477D2 = {
@@ -370,6 +374,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FF9E0F921C13D1200653657 /* UserServicesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -571,6 +576,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ServiceLayerDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -580,6 +586,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.appitventures.ServiceLayerDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ServiceLayerDemo.app/ServiceLayerDemo";
@@ -591,6 +598,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ServiceLayerDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
