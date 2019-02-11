@@ -29,38 +29,46 @@ typealias APIHandler = RequestHandler & ResponseHandler
 
 // MARK: - Request
 
-protocol Request {
-    var urlRequest: URLRequest { get }
+protocol RequestBuilder {
+    func setHeaders(request: inout URLRequest)
 }
 
-class BaseRequest: Request {
+class DefaultRequest: RequestBuilder {
+    
+    func setHeaders(request: inout URLRequest) {
+        // header params
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.setValue(AppHelper.getDeviceID(), forHTTPHeaderField: "DeviceId")
+        request.setValue(AppHelper.getCurrentLanguage(), forHTTPHeaderField: "DeviceLanguage")
+    }
+}
+
+class AuthRequest: DefaultRequest {
+    override func setHeaders(request: inout URLRequest) {
+        
+        super.setHeaders(request: &request)
+        // Auth Headers
+        let token = SharedData.shared().token!
+        request.setValue(token, forHTTPHeaderField: "AuthToken")
+        print(token)
+    }
+}
+
+class Request {
     
     private var request: URLRequest
     
-    init(urlRequest: URLRequest) {
+    init(urlRequest: URLRequest, requestBuilder: RequestBuilder) {
         self.request = urlRequest
+        // do configuration
+        requestBuilder.setHeaders(request: &self.request)
     }
     
     var urlRequest: URLRequest {
-        // header params
-        self.request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-        self.request.setValue(AppHelper.getDeviceID(), forHTTPHeaderField: "DeviceId")
-        self.request.setValue(AppHelper.getCurrentLanguage(), forHTTPHeaderField: "DeviceLanguage")
-        
         return request
     }
 }
 
-class AuthRequest: BaseRequest {
-    
-    override var urlRequest: URLRequest {
-        var request = super.urlRequest
-        // set auth related headers
-        let token = SharedData.shared().token!
-        request.setValue(token, forHTTPHeaderField: "AuthToken")
-        return request
-    }
-}
 
 // MARK: -
 extension RequestHandler {

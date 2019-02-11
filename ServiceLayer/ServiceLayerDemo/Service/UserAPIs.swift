@@ -15,7 +15,7 @@ struct LoginAPI: APIHandler {
         // set body params
         set(parameters, urlRequest: &urlRequest)
         // prepares request (sets header params, any additional configurations)
-        let request = BaseRequest(urlRequest: urlRequest)
+        let request = Request(urlRequest: urlRequest, requestBuilder: DefaultRequest())
         
         return request
     }
@@ -40,7 +40,7 @@ struct UserDetailAPI: APIHandler {
         var urlRequest = URLRequest(url: url!)
         urlRequest.httpMethod = "GET"
         // prepares auth request (sets header params, any additional configurations)
-        let request = AuthRequest(urlRequest: urlRequest)
+        let request = Request(urlRequest: urlRequest, requestBuilder: AuthRequest())
         
         return request
     }
