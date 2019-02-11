@@ -111,13 +111,13 @@
 			path = API;
 			sourceTree = "<group>";
 		};
-		9FA4CE2222117F2000E1B135 /* Mock */ = {
+		9FA4CE2222117F2000E1B135 /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
 				9FA4CE2322117F6300E1B135 /* MockService.swift */,
 				9FA4CE2422117F6400E1B135 /* MockURLProtocol.swift */,
 			);
-			path = Mock;
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 		9FDE578321955546001477D2 = {
@@ -182,7 +182,7 @@
 				9FDE57C0219555A4001477D2 /* ServiceConstants.swift */,
 				9FDE57DA219570D2001477D2 /* UserServices.swift */,
 				9FDE57DD21957109001477D2 /* UserAPIs.swift */,
-				9FA4CE2222117F2000E1B135 /* Mock */,
+				9FA4CE2222117F2000E1B135 /* Mocks */,
 				9F0C32F521A80AC200194EFF /* API */,
 			);
 			path = Service;
