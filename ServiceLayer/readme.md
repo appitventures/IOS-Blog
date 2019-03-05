@@ -2,6 +2,8 @@
 
 *Using Swift Generics & Protocol Extensions*
 
+This is a demo example project which covers writing testable network code, writing test cases and mocking responses.
+
 
 [Testable Network layer in Swift — Part 1](https://medium.com/mobile-app-developers/testable-network-layer-in-swift-part-1-dd9aa4f31e0e)
 
